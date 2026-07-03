@@ -29,6 +29,7 @@
     width: 100%;
     overflow-x: hidden;
     position: relative;
+    background: var(--branco);
   }
   body{
     font-family:var(--sans);
@@ -37,7 +38,11 @@
     -webkit-font-smoothing:antialiased;
     line-height:1.5;
   }
-  img, video{max-width:100%;display:block;height:auto;}
+  img, video{
+    max-width:100%;
+    display:block;
+    height:auto;
+  }
   a{text-decoration:none;color:inherit;}
   
   .container{width:100%;max-width:1240px;margin:0 auto;padding:0 5%;}
@@ -80,16 +85,20 @@
   .logo-text{font-family:var(--serif);color:var(--dourado-claro);line-height:1.1;}
   .logo-text .l1{font-size:0.95rem;letter-spacing:.05em;display:block;font-weight:600;}
   .logo-text .l2{font-size:.45rem;letter-spacing:.15em;color:#a89674;text-transform:uppercase;font-family:var(--sans);font-weight:400;}
+  .logo-svg-slot svg { width: 32px; height: 32px; color: var(--dourado); }
   
   nav.links{display:flex;gap:1.5rem;}
-  nav.links a{color:#e8ddd0;font-size:.7rem;text-transform:uppercase;}
+  nav.links a{color:#e8ddd0;font-size:.7rem;text-transform:uppercase;transition: color 0.3s;}
+  nav.links a:hover{color:var(--dourado-claro);}
   
   .burger{display:none;flex-direction:column;gap:6px;cursor:pointer;}
   .burger span{width:24px;height:2px;background:var(--dourado-claro);}
 
   .hero{
-    position:relative;min-height:100vh;
-    display:flex;align-items:center;
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
     padding-top:var(--header-h);
     overflow:hidden;
     background:var(--branco);
@@ -113,52 +122,59 @@
   .credenciais strong{font-family:var(--serif);font-size:1.5rem;color:var(--dourado);display:block;}
   .credenciais span{font-size:.6rem;text-transform:uppercase;color:var(--texto-suave);}
 
-  .booking-bar{
-    margin-top:3rem;background:var(--branco);padding:1.5rem;
-    display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:1rem;
-    border:1px solid var(--linha);box-shadow:0 10px 30px rgba(0,0,0,0.05);
-    align-items:end;
-  }
-  .booking-field{display:flex;flex-direction:column;gap:0.5rem;}
-  .booking-field label{font-size:0.6rem;text-transform:uppercase;color:var(--dourado);font-weight:600;}
-  .booking-field input, .booking-field select{
-    border:none;border-bottom:1px solid var(--linha);padding:0.5rem 0;
-    background:transparent;font-family:inherit;font-size:0.9rem;color:var(--texto-escuro);
-  }
-
   section{padding:5rem 0;width:100%;}
   .sec-head{margin-bottom:3rem;max-width:700px;}
   .sec-head.center{text-align:center;margin-left:auto;margin-right:auto;}
   .sec-head h2{font-size:clamp(1.8rem, 5vw, 2.8rem);margin-bottom:1rem;}
 
   .esp-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:1.5rem;}
-  .esp-card{background:var(--branco);padding:2.5rem;border:1px solid var(--linha);transition:transform 0.3s ease;}
-  .esp-card:hover{transform:translateY(-5px);border-color:var(--dourado);}
+  .esp-card{background:var(--branco);padding:2.5rem;border:1px solid var(--linha);transition:all 0.3s ease;}
+  .esp-card:hover{transform:translateY(-5px);border-color:var(--dourado);box-shadow: 0 10px 30px rgba(0,0,0,0.05);}
   .esp-num{color:var(--dourado);font-family:var(--serif);font-size:1.2rem;display:block;margin-bottom:1rem;}
 
   .experiencias{background:var(--preto-2);color:var(--branco);}
   .exp-row{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-bottom:4rem;}
+  .exp-row:last-child{margin-bottom:0;}
   .exp-row:nth-child(even) .exp-media{order:2;}
-  .exp-media{border-radius:4px;overflow:hidden;aspect-ratio:4/3;}
-  .exp-media img, .exp-media video{width:100%;height:100%;object-fit:cover;}
+  .exp-media{
+    border-radius:4px;
+    overflow:hidden;
+    aspect-ratio:16/9;
+    background: #000;
+  }
+  .exp-media video{width:100%;height:100%;object-fit:contain;}
   .exp-text h3{font-size:2rem;margin-bottom:1.2rem;}
   .exp-text p{color:#ccc;margin-bottom:1.5rem;}
-  .saiba{color:var(--dourado);font-weight:600;text-transform:uppercase;font-size:0.8rem;border-bottom:1px solid;}
+  .saiba{color:var(--dourado);font-weight:600;text-transform:uppercase;font-size:0.8rem;border-bottom:1px solid;transition: color 0.3s;}
+  .saiba:hover{color:var(--dourado-claro);}
 
   .resultados-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:2.5rem;}
-  .compare-slider{position:relative;aspect-ratio:4/3;overflow:hidden;cursor:ew-resize;}
+  .compare-card{width:100%;}
+  .compare-slider{
+    position:relative;
+    aspect-ratio:4/3;
+    overflow:hidden;
+    cursor:ew-resize;
+    border-radius:4px;
+  }
   .compare-before{position:absolute;inset:0;z-index:1;width:50%;overflow:hidden;border-right:2px solid var(--branco);}
-  .compare-before img, .compare-after img{width:100%;height:100%;object-fit:cover;}
-  .compare-range{position:absolute;inset:0;width:100%;height:100%;opacity:0;z-index:10;cursor:pointer;}
+  .compare-before img, .compare-after img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .compare-after{position:absolute;inset:0;z-index:0;}
+  .compare-range{
+    position:absolute;inset:0;width:100%;height:100%;opacity:0;z-index:10;cursor:pointer;
+    -webkit-appearance: none;
+  }
   .compare-info{padding:1rem 0;}
 
   .sobre-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:3rem;align-items:center;}
-  .sobre-photo img{border-radius:4px;}
+  .sobre-photo img{border-radius:4px; width:100%; height:auto; object-fit: cover;}
   .sobre-text h2{font-size:2.5rem;margin-bottom:1.5rem;}
   .sobre-text p{margin-bottom:1.2rem;color:var(--texto-suave);}
-
-  .gal-grid{display:grid;grid-template-columns:repeat(2, 1fr);gap:1rem;}
-  .gal-grid img, .gal-grid video{width:100%;height:200px;object-fit:cover;border-radius:4px;}
 
   .contato-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:2rem;}
   .contato-card{padding:2rem;background:var(--branco);border:1px solid var(--linha);text-align:center;}
@@ -166,15 +182,16 @@
   .mapa-wrap{height:350px;border-radius:4px;overflow:hidden;margin-top:3rem;}
   .mapa-wrap iframe{width:100%;height:100%;border:none;}
 
-  footer{background:var(--preto-2);color:white;padding:4rem 0 2rem;}
-  .foot-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:2rem;margin-bottom:2rem;}
-  .foot-bottom{padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);text-align:center;font-size:0.8rem;color:#888;}
+  footer{background:var(--preto-2);color:white;padding:2rem 0;}
+  .foot-bottom{text-align:center;font-size:0.8rem;color:#888;}
 
   .wa-float{
     position:fixed;bottom:2rem;right:2rem;width:60px;height:60px;
     background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;
     box-shadow:0 5px 15px rgba(0,0,0,0.2);z-index:100;
+    transition: transform 0.3s;
   }
+  .wa-float:hover{transform: scale(1.1);}
   .wa-float svg{width:32px;height:32px;fill:white;}
 
   #mobileMenu{
@@ -188,18 +205,28 @@
   .reveal.active{opacity:1;transform:translateY(0);}
 
   @media(max-width:1024px){
-    .hero{align-items:flex-start;padding-top:120px;}
-    .hero-inner{max-width:100%;text-align:center;}
-    .credenciais{max-width:400px;margin:0 auto;}
+    .hero{align-items:center;padding-top:var(--header-h); text-align: center;}
+    .hero-bg::after{
+      background:radial-gradient(circle, rgba(253,251,249,0.8) 0%, rgba(253,251,249,0.95) 100%);
+    }
+    .hero-inner{max-width:100%; margin: 0 auto;}
+    .credenciais{max-width:400px;margin:2rem auto 0;}
   }
 
   @media(max-width:768px){
+    :root{ --header-h: 70px; }
+    header{ padding: 0.8rem 5%; }
     nav.links{display:none;}
     .burger{display:flex;}
+    .hero{ min-height: 80vh; }
+    .hero h1{ font-size: 2.5rem; }
     .exp-row{grid-template-columns:1fr;gap:2rem;}
     .exp-row:nth-child(even) .exp-media{order:0;}
-    .sobre-grid{grid-template-columns:1fr;gap:2rem;}
-    .gal-grid{grid-template-columns:1fr;}
+    .exp-media{ aspect-ratio: 1/1; }
+    .exp-media video { object-fit: cover; }
+    .sobre-grid{grid-template-columns:1fr;gap:2rem; text-align: center;}
+    .sobre-photo{ order: -1; }
+    section{ padding: 3.5rem 0; }
   }
 </style>
 </head>
@@ -279,7 +306,7 @@
   <div class="container">
     <div class="exp-row reveal">
       <div class="exp-media">
-        <video autoplay muted loop playsinline poster="images/atendimento-24h.jpg">
+        <video autoplay muted loop playsinline>
           <source src="images/d73b0b95-2681-4d12-8c33-22203cc8d542.MP4" type="video/mp4">
         </video>
       </div>
@@ -291,7 +318,7 @@
     </div>
     <div class="exp-row reveal">
       <div class="exp-media">
-        <video autoplay muted loop playsinline poster="images/tratamento-canal.jpg">
+        <video autoplay muted loop playsinline>
           <source src="images/818ac748-7070-411c-aeae-fc3c2fcb867e.MP4" type="video/mp4">
         </video>
       </div>
@@ -313,16 +340,16 @@
     <div class="resultados-grid">
       <div class="compare-card reveal">
         <div class="compare-slider">
-          <div class="compare-before"><img src="images/e1bb2d64-5e21-4a33-a870-d50940bb9730.JPG" alt="Antes"></div>
           <div class="compare-after"><img src="images/9c28fe48-e731-450b-b6de-ebc9af435ad3.JPG" alt="Depois"></div>
+          <div class="compare-before"><img src="images/e1bb2d64-5e21-4a33-a870-d50940bb9730.JPG" alt="Antes"></div>
           <input type="range" min="0" max="100" value="50" class="compare-range">
         </div>
         <div class="compare-info"><h4>Reabilitação Anterior</h4></div>
       </div>
       <div class="compare-card reveal">
         <div class="compare-slider">
-          <div class="compare-before"><img src="images/e1c7ca70-d31b-4ba8-9111-9a1a04fc3b45.JPG" alt="Antes"></div>
           <div class="compare-after"><img src="images/b11bc6ba-000d-45b3-a357-3160355a9591.JPG" alt="Depois"></div>
+          <div class="compare-before"><img src="images/e1c7ca70-d31b-4ba8-9111-9a1a04fc3b45.JPG" alt="Antes"></div>
           <input type="range" min="0" max="100" value="50" class="compare-range">
         </div>
         <div class="compare-info"><h4>Saúde Bucal</h4></div>
@@ -418,8 +445,10 @@
 
   const logoSlots = document.querySelectorAll('.logo-svg-slot');
   const toothTemplate = document.getElementById('tooth-svg').content;
-  logoSlots.forEach(slot => slot.appendChild(toothTemplate.cloneNode(true)));
+  logoSlots.forEach(slot => {
+    const clone = toothTemplate.cloneNode(true);
+    slot.appendChild(clone);
+  });
 </script>
 </body>
 </html>
- 
