@@ -4,47 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Dr. André Gusman — Cirurgia Oral & Urgência | Sorocaba SP</title>
-<meta name="description" content="Dr. André Gusman Garcia de Oliveira, cirurgião-dentista CRO 168779. Cirurgia oral, implantes, laserterapia e urgência odontológica 24h em Sorocaba, SP.">
+<meta name="description" content="Dr. André Gusman CRO 168779. Cirurgia oral, implantes e urgência 24h em Sorocaba.">
 <meta name="theme-color" content="#0e0c0b">
-<meta property="og:type" content="business.business">
-<meta property="og:title" content="Dr. André Gusman — Cirurgia Oral & Urgência">
-<meta property="og:description" content="Atendimento de urgência odontológica 24h em Sorocaba, SP. Cirurgia oral, implantes, laserterapia e próteses.">
-<meta property="og:image" content="images/doutor-andre.png">
-<meta property="og:locale" content="pt_BR">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23c9a15a' d='M30 15c-10 0-15 10-14 23 1 17 6 37 12 47 3 5 8 3 9-5 1-10 3-20 13-20s12 10 13 20c1 8 6 10 9 5 6-10 11-30 12-47 1-13-4-23-14-23-8 0-12 5-20 5s-8-5-20-5Z'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="images/doutor-andre.png">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Dentist",
-  "name": "Dr. André Gusman",
-  "image": "images/doutor-andre.png",
-  "telephone": "+5515991574343",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "R. Prof. Toledo, 264",
-    "addressLocality": "Sorocaba",
-    "addressRegion": "SP",
-    "postalCode": "18035-110",
-    "addressCountry": "BR"
-  },
-  "openingHoursSpecification": [
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:00","closes":"18:30"}
-  ]
-}
-</script>
 <style>
   :root{
     --preto:#0c0a09;
     --preto-2:#161311;
     --dourado:#c9a15a;
     --dourado-claro:#e4c98a;
-    --rose:#e9dcd3;
-    --rose-2:#f3e9e2;
     --branco:#fdfbf9;
     --texto-escuro:#231f1c;
     --texto-suave:#6b6058;
@@ -53,33 +24,23 @@
     --sans:'Jost', sans-serif;
     --header-h:84px;
   }
-  [data-theme='dark'] {
-    --preto:#fdfbf9;
-    --preto-2:#f3e9e2;
-    --branco:#0c0a09;
-    --texto-escuro:#fdfbf9;
-    --texto-suave:#cfc3b3;
-    --linha:rgba(201,161,90,0.2);
-  }
   *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;scroll-padding-top:var(--header-h);}
-  @media(prefers-reduced-motion:reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;}
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
   }
   body{
     font-family:var(--sans);
     color:var(--texto-escuro);
     background:var(--branco);
-    overflow-x:hidden;
     -webkit-font-smoothing:antialiased;
-    width:100%;
     line-height:1.5;
   }
   img, video{max-width:100%;display:block;height:auto;}
   a{text-decoration:none;color:inherit;}
-  ::selection{background:var(--dourado);color:var(--preto);}
-  :focus-visible{outline:2px solid var(--dourado);outline-offset:3px;}
+  
+  .container{width:100%;max-width:1240px;margin:0 auto;padding:0 5%;}
   .eyebrow{
     font-family:var(--sans);
     letter-spacing:.3em;
@@ -87,30 +48,25 @@
     font-size:.72rem;
     color:var(--dourado);
     font-weight:500;
+    margin-bottom:1rem;
+    display:block;
   }
   h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.1;}
-  .container{width:100%;max-width:1240px;margin:0 auto;padding:0 5%;}
+  
   .btn{
-    display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+    display:inline-flex;align-items:center;justify-content:center;
     padding:0.9rem 1.8rem;
     font-family:var(--sans);font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;
     border:1px solid var(--dourado);
     color:var(--dourado);
     background:transparent;
-    transition:all .3s ease;
+    transition:all 0.3s ease;
     cursor:pointer;
-    white-space:nowrap;
     border-radius:2px;
   }
   .btn:hover{background:var(--dourado);color:var(--preto);}
   .btn.solid{background:var(--dourado);color:var(--preto);}
-  .btn.solid:hover{background:var(--dourado-claro);border-color:var(--dourado-claro);}
-  .btn.on-dark{border-color:rgba(253,251,249,.7);color:var(--branco);}
-  .btn.on-dark:hover{background:var(--branco);color:var(--preto);border-color:var(--branco);}
-  .btn.on-light{border-color:var(--texto-escuro);color:var(--texto-escuro);}
-  .btn.on-light:hover{background:var(--texto-escuro);color:var(--branco);}
 
-  /* ===== HEADER ===== */
   header{
     position:fixed;top:0;left:0;right:0;z-index:1000;
     display:flex;align-items:center;justify-content:space-between;
@@ -119,37 +75,20 @@
     backdrop-filter:blur(10px);
     transition:all 0.3s ease;
   }
-  header.scrolled{
-    padding:0.6rem 5%;
-    background:rgba(12,10,9,0.95);
-    box-shadow:0 2px 20px rgba(0,0,0,0.2);
-  }
+  header.scrolled{padding:0.6rem 5%; background:rgba(12,10,9,0.95);}
   .logo-mark{display:flex;align-items:center;gap:.8rem;}
-  .logo-mark svg{width:32px;height:32px;flex-shrink:0;}
   .logo-text{font-family:var(--serif);color:var(--dourado-claro);line-height:1.1;}
   .logo-text .l1{font-size:0.95rem;letter-spacing:.05em;display:block;font-weight:600;}
   .logo-text .l2{font-size:.45rem;letter-spacing:.15em;color:#a89674;text-transform:uppercase;font-family:var(--sans);font-weight:400;}
   
   nav.links{display:flex;gap:1.5rem;}
-  nav.links a{
-    color:#e8ddd0;font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;
-    position:relative;padding-bottom:4px;transition:color 0.3s ease;
-  }
-  nav.links a:hover{color:var(--dourado-claro);}
+  nav.links a{color:#e8ddd0;font-size:.7rem;text-transform:uppercase;}
   
-  .nav-cta{display:flex;align-items:center;gap:1rem;}
-  .burger{display:none;flex-direction:column;gap:6px;cursor:pointer;padding:5px;}
-  .burger span{width:24px;height:2px;background:var(--dourado-claro);transition:all 0.3s ease;}
-  
-  .theme-toggle{background:none;border:none;cursor:pointer;color:var(--dourado-claro);display:flex;align-items:center;justify-content:center;}
-  .theme-toggle svg{width:20px;height:20px;}
-  .icon-sun{display:none;}
-  [data-theme='dark'] .icon-moon{display:none;}
-  [data-theme='dark'] .icon-sun{display:block;}
+  .burger{display:none;flex-direction:column;gap:6px;cursor:pointer;}
+  .burger span{width:24px;height:2px;background:var(--dourado-claro);}
 
-  /* ===== HERO ===== */
   .hero{
-    position:relative;min-height:100vh;min-height:100svh;
+    position:relative;min-height:100vh;
     display:flex;align-items:center;
     padding-top:var(--header-h);
     overflow:hidden;
@@ -161,210 +100,113 @@
     content:'';position:absolute;inset:0;
     background:linear-gradient(to right, rgba(253,251,249,0.95) 30%, rgba(253,251,249,0.4) 100%);
   }
-  [data-theme='dark'] .hero-bg::after{
-    background:linear-gradient(to right, rgba(12,10,9,0.95) 30%, rgba(12,10,9,0.4) 100%);
-  }
   .hero-content{position:relative;z-index:2;width:100%;}
   .hero-inner{max-width:600px;}
-  .hero h1{
-    font-size:clamp(2.2rem, 8vw, 4rem);
-    margin-bottom:1.5rem;
-    color:var(--texto-escuro);
-  }
+  .hero h1{font-size:clamp(2.2rem, 8vw, 4rem);margin-bottom:1.5rem;color:var(--texto-escuro);}
   .hero h1 em{color:var(--dourado);font-style:italic;}
-  .hero p.lead{
-    font-size:1.1rem;color:var(--texto-suave);margin-bottom:2.5rem;max-width:500px;
-  }
-  .hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem;}
+  .hero p.lead{font-size:1.1rem;color:var(--texto-suave);margin-bottom:2.5rem;}
   
   .credenciais{
-    display:grid;grid-template-columns:repeat(3, 1fr);gap:1.5rem;
+    display:grid;grid-template-columns:repeat(3, 1fr);gap:1rem;
     padding-top:2rem;border-top:1px solid var(--linha);
   }
   .credenciais strong{font-family:var(--serif);font-size:1.5rem;color:var(--dourado);display:block;}
-  .credenciais span{font-size:.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--texto-suave);}
+  .credenciais span{font-size:.6rem;text-transform:uppercase;color:var(--texto-suave);}
 
   .booking-bar{
     margin-top:3rem;background:var(--branco);padding:1.5rem;
-    display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:1.5rem;
+    display:grid;grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));gap:1rem;
     border:1px solid var(--linha);box-shadow:0 10px 30px rgba(0,0,0,0.05);
     align-items:end;
   }
   .booking-field{display:flex;flex-direction:column;gap:0.5rem;}
-  .booking-field label{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--dourado);font-weight:600;}
+  .booking-field label{font-size:0.6rem;text-transform:uppercase;color:var(--dourado);font-weight:600;}
   .booking-field input, .booking-field select{
     border:none;border-bottom:1px solid var(--linha);padding:0.5rem 0;
     background:transparent;font-family:inherit;font-size:0.9rem;color:var(--texto-escuro);
   }
-  .booking-field input:focus, .booking-field select:focus{outline:none;border-bottom-color:var(--dourado);}
 
-  /* ===== SECTIONS ===== */
   section{padding:5rem 0;width:100%;}
   .sec-head{margin-bottom:3rem;max-width:700px;}
   .sec-head.center{text-align:center;margin-left:auto;margin-right:auto;}
   .sec-head h2{font-size:clamp(1.8rem, 5vw, 2.8rem);margin-bottom:1rem;}
-  .sec-head p{color:var(--texto-suave);font-size:1.05rem;}
 
-  /* ESPECIALIDADES */
-  .esp-grid{
-    display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:1.5rem;
-  }
-  .esp-card{
-    background:var(--preto-2);padding:2.5rem;border:1px solid var(--linha);
-    transition:transform 0.3s ease, border-color 0.3s ease;
-  }
+  .esp-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:1.5rem;}
+  .esp-card{background:var(--branco);padding:2.5rem;border:1px solid var(--linha);transition:transform 0.3s ease;}
   .esp-card:hover{transform:translateY(-5px);border-color:var(--dourado);}
   .esp-num{color:var(--dourado);font-family:var(--serif);font-size:1.2rem;display:block;margin-bottom:1rem;}
-  .esp-card h3{font-size:1.5rem;margin-bottom:1rem;color:var(--texto-escuro);}
-  .esp-card p{font-size:0.95rem;color:var(--texto-suave);}
 
-  /* PROCEDIMENTOS */
   .experiencias{background:var(--preto-2);color:var(--branco);}
-  .exp-row{
-    display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-bottom:5rem;
-  }
-  .exp-row:last-child{margin-bottom:0;}
+  .exp-row{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;margin-bottom:4rem;}
   .exp-row:nth-child(even) .exp-media{order:2;}
-  .exp-media{position:relative;border-radius:4px;overflow:hidden;aspect-ratio:16/9;}
-  .exp-media video, .exp-media img{width:100%;height:100%;object-fit:cover;}
+  .exp-media{border-radius:4px;overflow:hidden;aspect-ratio:4/3;}
+  .exp-media img, .exp-media video{width:100%;height:100%;object-fit:cover;}
   .exp-text h3{font-size:2rem;margin-bottom:1.2rem;}
-  .exp-text p{color:#ccc;margin-bottom:1.5rem;line-height:1.7;}
-  .saiba{color:var(--dourado);font-weight:600;text-transform:uppercase;font-size:0.8rem;letter-spacing:0.1em;border-bottom:1px solid;}
+  .exp-text p{color:#ccc;margin-bottom:1.5rem;}
+  .saiba{color:var(--dourado);font-weight:600;text-transform:uppercase;font-size:0.8rem;border-bottom:1px solid;}
 
-  /* RESULTADOS */
-  .resultados-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:2.5rem;}
-  .compare-slider{
-    position:relative;aspect-ratio:4/3;overflow:hidden;cursor:ew-resize;margin-bottom:1.5rem;
-  }
-  .compare-before{position:absolute;inset:0;z-index:1;width:50%;overflow:hidden;border-right:2px solid var(--dourado);}
+  .resultados-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));gap:2.5rem;}
+  .compare-slider{position:relative;aspect-ratio:4/3;overflow:hidden;cursor:ew-resize;}
+  .compare-before{position:absolute;inset:0;z-index:1;width:50%;overflow:hidden;border-right:2px solid var(--branco);}
   .compare-before img, .compare-after img{width:100%;height:100%;object-fit:cover;}
-  .compare-range{
-    position:absolute;inset:0;width:100%;height:100%;opacity:0;z-index:10;cursor:pointer;
-  }
-  .compare-tag{
-    position:absolute;bottom:1rem;padding:0.4rem 0.8rem;background:rgba(0,0,0,0.6);
-    color:white;font-size:0.7rem;text-transform:uppercase;z-index:5;
-  }
-  .tag-antes{left:1rem;}
-  .tag-depois{right:1rem;}
+  .compare-range{position:absolute;inset:0;width:100%;height:100%;opacity:0;z-index:10;cursor:pointer;}
+  .compare-info{padding:1rem 0;}
 
-  /* SOBRE */
-  .sobre-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:4rem;align-items:center;}
-  .sobre-photo{position:relative;padding:1rem;}
-  .sobre-photo img{width:100%;border-radius:4px;position:relative;z-index:2;}
-  .sobre-photo::before{
-    content:'';position:absolute;top:0;left:0;width:80%;height:80%;
-    border:2px solid var(--dourado);z-index:1;
-  }
+  .sobre-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:3rem;align-items:center;}
+  .sobre-photo img{border-radius:4px;}
   .sobre-text h2{font-size:2.5rem;margin-bottom:1.5rem;}
-  .sobre-text p{margin-bottom:1.2rem;color:var(--texto-suave);line-height:1.8;}
+  .sobre-text p{margin-bottom:1.2rem;color:var(--texto-suave);}
 
-  /* GALERIA */
-  .gal-grid{
-    display:grid;grid-template-columns:repeat(4, 1fr);grid-auto-rows:200px;gap:1rem;
-  }
-  .gal-grid img, .gal-grid video{width:100%;height:100%;object-fit:cover;border-radius:4px;}
-  .g1{grid-column:span 2;grid-row:span 2;}
-  .g2{grid-column:span 2;}
-  .g3{grid-column:span 1;}
-  .g4{grid-column:span 1;}
-  .g5{grid-column:span 2;}
+  .gal-grid{display:grid;grid-template-columns:repeat(2, 1fr);gap:1rem;}
+  .gal-grid img, .gal-grid video{width:100%;height:200px;object-fit:cover;border-radius:4px;}
 
-  /* CONTATO */
   .contato-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:2rem;}
-  .contato-card{
-    padding:2rem;background:var(--preto-2);border:1px solid var(--linha);text-align:center;
-  }
+  .contato-card{padding:2rem;background:var(--branco);border:1px solid var(--linha);text-align:center;}
   .contato-card svg{width:32px;height:32px;color:var(--dourado);margin-bottom:1rem;}
-  .contato-card .lbl{display:block;font-size:0.7rem;text-transform:uppercase;color:var(--texto-suave);margin-bottom:0.5rem;}
-  .contato-card a, .contato-card .val{font-size:1.1rem;font-weight:500;color:var(--texto-escuro);}
-  
-  .mapa-wrap{margin-top:3rem;height:400px;border-radius:4px;overflow:hidden;border:1px solid var(--linha);}
+  .mapa-wrap{height:350px;border-radius:4px;overflow:hidden;margin-top:3rem;}
   .mapa-wrap iframe{width:100%;height:100%;border:none;}
 
-  /* FOOTER */
-  footer{background:var(--preto-2);padding:4rem 0 2rem;border-top:1px solid var(--linha);}
-  .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:3rem;margin-bottom:3rem;}
-  .foot-col h6{color:var(--dourado);margin-bottom:1.5rem;text-transform:uppercase;font-size:0.8rem;letter-spacing:0.1em;}
-  .foot-col a{display:block;margin-bottom:0.8rem;color:#ccc;font-size:0.9rem;transition:color 0.3s ease;}
-  .foot-col a:hover{color:var(--dourado);}
-  .social-links{display:flex;gap:1rem;}
-  .social-links svg{width:20px;height:20px;fill:currentColor;}
-  .foot-bottom{padding-top:2rem;border-top:1px solid var(--linha);display:flex;justify-content:space-between;font-size:0.8rem;color:var(--texto-suave);}
+  footer{background:var(--preto-2);color:white;padding:4rem 0 2rem;}
+  .foot-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:2rem;margin-bottom:2rem;}
+  .foot-bottom{padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1);text-align:center;font-size:0.8rem;color:#888;}
 
-  /* FLOATING */
   .wa-float{
     position:fixed;bottom:2rem;right:2rem;width:60px;height:60px;
     background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);z-index:100;transition:transform 0.3s ease;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);z-index:100;
   }
-  .wa-float:hover{transform:scale(1.1);}
   .wa-float svg{width:32px;height:32px;fill:white;}
-  
-  .top-float{
-    position:fixed;bottom:2rem;left:2rem;width:50px;height:50px;
-    background:var(--dourado);border:none;border-radius:50%;display:flex;align-items:center;justify-content:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.2);z-index:100;cursor:pointer;opacity:0;visibility:hidden;transition:all 0.3s ease;
-  }
-  .top-float.show{opacity:1;visibility:visible;}
-  .top-float svg{width:24px;height:24px;color:var(--preto);}
 
-  /* REVEAL */
-  .reveal{opacity:0;transform:translateY(30px);transition:all 0.8s ease;}
-  .reveal.show{opacity:1;transform:translateY(0);}
-
-  /* MOBILE MENU */
   #mobileMenu{
     position:fixed;inset:0;background:rgba(12,10,9,0.98);z-index:2000;
     display:none;flex-direction:column;align-items:center;justify-content:center;gap:2rem;
   }
-  .mob-link{color:white;font-family:var(--serif);font-size:1.8rem;text-decoration:none;}
+  .mob-link{color:white;font-family:var(--serif);font-size:2rem;}
   #closeMenu{position:absolute;top:2rem;right:5%;font-size:3rem;color:var(--dourado);cursor:pointer;}
 
-  /* ===== RESPONSIVE ===== */
+  .reveal{opacity:0;transform:translateY(30px);transition:all 0.8s ease;}
+  .reveal.active{opacity:1;transform:translateY(0);}
+
   @media(max-width:1024px){
-    .hero-bg::after{background:linear-gradient(to bottom, rgba(253,251,249,0.9) 40%, rgba(253,251,249,0.6) 100%);}
-    [data-theme='dark'] .hero-bg::after{background:linear-gradient(to bottom, rgba(12,10,9,0.9) 40%, rgba(12,10,9,0.6) 100%);}
     .hero{align-items:flex-start;padding-top:120px;}
     .hero-inner{max-width:100%;text-align:center;}
-    .hero-ctas{justify-content:center;}
-    .credenciais{max-width:500px;margin:0 auto;}
-    .foot-grid{grid-template-columns:1fr 1fr;gap:2rem;}
+    .credenciais{max-width:400px;margin:0 auto;}
   }
 
   @media(max-width:768px){
-    header{padding:0.8rem 5%;}
-    nav.links, .nav-cta .btn{display:none;}
+    nav.links{display:none;}
     .burger{display:flex;}
     .exp-row{grid-template-columns:1fr;gap:2rem;}
     .exp-row:nth-child(even) .exp-media{order:0;}
-    .sobre-grid{grid-template-columns:1fr;gap:3rem;}
-    .sobre-photo{max-width:400px;margin:0 auto;}
-    .gal-grid{grid-template-columns:repeat(2, 1fr);grid-auto-rows:150px;}
-    .booking-bar{grid-template-columns:1fr;}
-    .foot-grid{grid-template-columns:1fr;}
-    .foot-bottom{flex-direction:column;text-align:center;gap:1rem;}
-  }
-
-  @media(max-width:480px){
-    .hero h1{font-size:2.4rem;}
-    .sec-head h2{font-size:1.8rem;}
-    .wa-float{bottom:1.5rem;right:1.5rem;width:50px;height:50px;}
-    .top-float{bottom:1.5rem;left:1.5rem;width:40px;height:40px;}
+    .sobre-grid{grid-template-columns:1fr;gap:2rem;}
+    .gal-grid{grid-template-columns:1fr;}
   }
 </style>
 </head>
 <body>
 
-<template id="tooth-svg">
-  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M30 15 C20 15 15 25 16 38 C17 55 22 75 28 85 C31 90 36 88 37 80 C38 70 40 60 50 60 C60 60 62 70 63 80 C64 88 69 90 72 85 C78 75 83 55 84 38 C85 25 80 15 70 15 C62 15 58 20 50 20 C42 20 38 15 30 15 Z" stroke="currentColor" stroke-width="3"/>
-    <text x="50" y="52" font-family="Cormorant Garamond, serif" font-size="34" fill="currentColor" text-anchor="middle">A</text>
-  </svg>
-</template>
-
 <header id="header">
-  <a href="#topo" class="logo-mark">
+  <a href="#" class="logo-mark">
     <span class="logo-svg-slot"></span>
     <span class="logo-text">
       <span class="l1">DR. ANDRÉ GUSMAN</span>
@@ -374,71 +216,36 @@
   <nav class="links">
     <a href="#sobre">Sobre</a>
     <a href="#especializacoes">Especialidades</a>
-    <a href="#procedimentos">Procedimentos</a>
     <a href="#resultados">Resultados</a>
-    <a href="#galeria">Estrutura</a>
     <a href="#contato">Contato</a>
   </nav>
-  <div class="nav-cta">
-    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
-      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
-    </button>
-    <a href="https://wa.me/5515991574343" target="_blank" rel="noopener" class="btn">Agendar</a>
-    <div class="burger" id="burger"><span></span><span></span><span></span></div>
-  </div>
+  <div class="burger" id="burger"><span></span><span></span><span></span></div>
 </header>
 
 <div id="mobileMenu">
   <div id="closeMenu">&times;</div>
   <a href="#sobre" class="mob-link">Sobre</a>
   <a href="#especializacoes" class="mob-link">Especialidades</a>
-  <a href="#procedimentos" class="mob-link">Procedimentos</a>
   <a href="#resultados" class="mob-link">Resultados</a>
-  <a href="#galeria" class="mob-link">Estrutura</a>
   <a href="#contato" class="mob-link">Contato</a>
 </div>
 
-<section class="hero" id="topo">
+<section class="hero">
   <div class="hero-bg">
     <img src="images/doutor-andre.png" alt="Dr. André Gusman">
   </div>
   <div class="container hero-content">
-    <div class="hero-inner reveal">
+    <div class="hero-inner reveal active">
       <span class="eyebrow">Prótese sobre Implante & Urgência</span>
       <h1>Cuidado humano,<br><em>sorriso renovado.</em></h1>
       <p class="lead">Atendimento de urgência odontológica 24h e tratamentos especializados em implantodontia em Sorocaba, SP.</p>
-      <div class="hero-ctas">
-        <a href="https://wa.me/5515991574343" target="_blank" rel="noopener" class="btn solid">WhatsApp</a>
-        <a href="tel:+5515991574343" class="btn on-light">Ligar agora</a>
-      </div>
+      <a href="https://wa.me/5515991574343" target="_blank" class="btn solid">Agendar Consulta</a>
       <div class="credenciais">
         <div><strong>200+</strong><span>Avaliações</span></div>
         <div><strong>CRO</strong><span>168779</span></div>
         <div><strong>24h</strong><span>Urgência</span></div>
       </div>
     </div>
-
-    <form class="booking-bar reveal" id="bookingForm">
-      <div class="booking-field">
-        <label for="bkNome">Nome</label>
-        <input type="text" id="bkNome" placeholder="Seu nome" required>
-      </div>
-      <div class="booking-field">
-        <label for="bkTel">Telefone</label>
-        <input type="tel" id="bkTel" placeholder="(15) 99157-4343" required>
-      </div>
-      <div class="booking-field">
-        <label for="bkTipo">Tratamento</label>
-        <select id="bkTipo">
-          <option>Implantes Dentários</option>
-          <option>Urgência 24h</option>
-          <option>Cirurgia Oral</option>
-          <option>Limpeza e Prevenção</option>
-        </select>
-      </div>
-      <button type="submit" class="btn solid">Agendar</button>
-    </form>
   </div>
 </section>
 
@@ -446,24 +253,23 @@
   <div class="container">
     <div class="sec-head reveal">
       <span class="eyebrow">Áreas de Atuação</span>
-      <h2>Especialidades em destaque</h2>
-      <p>Tratamentos modernos e seguros baseados em evidências científicas.</p>
+      <h2>Especialidades</h2>
     </div>
     <div class="esp-grid">
       <div class="esp-card reveal">
         <span class="esp-num">01</span>
         <h3>Implantes Dentários</h3>
-        <p>Recuperação da função mastigatória e da estética com tecnologia de ponta.</p>
+        <p>Recuperação da função mastigatória com tecnologia de ponta.</p>
       </div>
       <div class="esp-card reveal">
         <span class="esp-num">02</span>
         <h3>Cirurgia Oral</h3>
-        <p>Extração de siso e pequenas cirurgias bucais com técnica refinada.</p>
+        <p>Extração de siso e pequenas cirurgias com técnica refinada.</p>
       </div>
       <div class="esp-card reveal">
         <span class="esp-num">03</span>
         <h3>Urgência 24h</h3>
-        <p>Atendimento imediato para dor intensa, traumas e emergências.</p>
+        <p>Atendimento imediato para dor e emergências a qualquer hora.</p>
       </div>
     </div>
   </div>
@@ -471,11 +277,6 @@
 
 <section class="experiencias" id="procedimentos">
   <div class="container">
-    <div class="sec-head reveal">
-      <span class="eyebrow">Excelência Clínica</span>
-      <h2>Tecnologia e Cuidado</h2>
-    </div>
-
     <div class="exp-row reveal">
       <div class="exp-media">
         <video autoplay muted loop playsinline poster="images/atendimento-24h.jpg">
@@ -484,11 +285,10 @@
       </div>
       <div class="exp-text">
         <h3>Escaneamento Intraoral</h3>
-        <p>Capturamos imagens detalhadas da sua boca em tempo real para diagnósticos precisos e tratamentos ágeis.</p>
-        <a href="https://wa.me/5515991574343" target="_blank" rel="noopener" class="saiba">Saiba mais</a>
+        <p>Diagnósticos precisos e tratamentos mais rápidos com tecnologia digital.</p>
+        <a href="https://wa.me/5515991574343" target="_blank" class="saiba">Saiba mais</a>
       </div>
     </div>
-
     <div class="exp-row reveal">
       <div class="exp-media">
         <video autoplay muted loop playsinline poster="images/tratamento-canal.jpg">
@@ -497,8 +297,8 @@
       </div>
       <div class="exp-text">
         <h3>Restaurações Estéticas</h3>
-        <p>Uso de materiais de alta performance para devolver a forma e função natural dos seus dentes.</p>
-        <a href="https://wa.me/5515991574343" target="_blank" rel="noopener" class="saiba">Ver tratamentos</a>
+        <p>Materiais de alta performance para devolver a beleza natural dos dentes.</p>
+        <a href="https://wa.me/5515991574343" target="_blank" class="saiba">Ver tratamentos</a>
       </div>
     </div>
   </div>
@@ -507,37 +307,25 @@
 <section id="resultados">
   <div class="container">
     <div class="sec-head center reveal">
-      <span class="eyebrow">Resultados Reais</span>
+      <span class="eyebrow">Resultados</span>
       <h2>Transformações</h2>
     </div>
     <div class="resultados-grid">
       <div class="compare-card reveal">
         <div class="compare-slider">
-          <div class="compare-before">
-            <img src="images/9c28fe48-e731-450b-b6de-ebc9af435ad3.JPG" alt="Antes">
-          </div>
-          <div class="compare-after">
-            <img src="images/e1bb2d64-5e21-4a33-a870-d50940bb9730.JPG" alt="Depois">
-          </div>
-          <span class="compare-tag tag-antes">Antes</span>
-          <span class="compare-tag tag-depois">Depois</span>
-          <input type="range" class="compare-range" min="0" max="100" value="50">
+          <div class="compare-before"><img src="images/9c28fe48-e731-450b-b6de-ebc9af435ad3.JPG" alt="Antes"></div>
+          <div class="compare-after"><img src="images/e1bb2d64-5e21-4a33-a870-d50940bb9730.JPG" alt="Depois"></div>
+          <input type="range" min="0" max="100" value="50" class="compare-range">
         </div>
-        <h3>Reabilitação Anterior</h3>
+        <div class="compare-info"><h4>Reabilitação Anterior</h4></div>
       </div>
       <div class="compare-card reveal">
         <div class="compare-slider">
-          <div class="compare-before">
-            <img src="images/b11bc6ba-000d-45b3-a357-3160355a9591.JPG" alt="Antes">
-          </div>
-          <div class="compare-after">
-            <img src="images/e1c7ca70-d31b-4ba8-9111-9a1a04fc3b45.JPG" alt="Depois">
-          </div>
-          <span class="compare-tag tag-antes">Antes</span>
-          <span class="compare-tag tag-depois">Depois</span>
-          <input type="range" class="compare-range" min="0" max="100" value="50">
+          <div class="compare-before"><img src="images/b11bc6ba-000d-45b3-a357-3160355a9591.JPG" alt="Antes"></div>
+          <div class="compare-after"><img src="images/e1c7ca70-d31b-4ba8-9111-9a1a04fc3b45.JPG" alt="Depois"></div>
+          <input type="range" min="0" max="100" value="50" class="compare-range">
         </div>
-        <h3>Saúde Bucal</h3>
+        <div class="compare-info"><h4>Saúde Bucal</h4></div>
       </div>
     </div>
   </div>
@@ -551,52 +339,24 @@
       </div>
       <div class="sobre-text reveal">
         <span class="eyebrow">O Profissional</span>
-        <h2>André Gusman Garcia de Oliveira</h2>
-        <p>Cirurgião-dentista formado pela UNISO, com especialização em Prótese sobre Implante e Implantodontia.</p>
-        <p>Focado em unir tecnologia moderna e um atendimento humanizado, garantindo segurança e conforto em cada procedimento.</p>
-        <a href="https://wa.me/5515991574343" target="_blank" rel="noopener" class="btn solid">Falar com o Dr. André</a>
+        <h2>Dr. André Gusman</h2>
+        <p>Especialista em Prótese sobre Implante e Implantodontia, focado em atendimento humanizado e tecnologia.</p>
+        <a href="https://wa.me/5515991574343" target="_blank" class="btn solid">Falar com o Doutor</a>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="galeria">
-  <div class="container">
-    <div class="sec-head reveal">
-      <span class="eyebrow">Estrutura</span>
-      <h2>Nossa Clínica</h2>
-    </div>
-    <div class="gal-grid">
-      <img class="g1 reveal" src="images/cirurgia-oral.jpg" alt="Clínica">
-      <video class="g2 reveal" autoplay muted loop playsinline><source src="images/d73b0b95-2681-4d12-8c33-22203cc8d542.MP4" type="video/mp4"></video>
-      <img class="g3 reveal" src="images/tratamento-canal.jpg" alt="Equipamentos">
-      <img class="g4 reveal" src="images/limpeza.jpg" alt="Sala">
-      <video class="g5 reveal" autoplay muted loop playsinline><source src="images/818ac748-7070-411c-aeae-fc3c2fcb867e.MP4" type="video/mp4"></video>
     </div>
   </div>
 </section>
 
 <section id="contato">
   <div class="container">
-    <div class="sec-head center reveal">
-      <span class="eyebrow">Contato</span>
-      <h2>Agende sua visita</h2>
-    </div>
     <div class="contato-grid">
       <div class="contato-card reveal">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
-        <span class="lbl">WhatsApp</span>
-        <a href="https://wa.me/5515991574343" target="_blank" rel="noopener">(15) 99157-4343</a>
+        <h5>WhatsApp</h5><p>(15) 99157-4343</p>
       </div>
       <div class="contato-card reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.3 1.8.6 2.7a2 2 0 01-.4 2.1L8.1 9.6a16 16 0 006 6l1.1-1.2a2 2 0 012.1-.4c.9.3 1.8.5 2.7.6a2 2 0 011.7 2z"/></svg>
-        <span class="lbl">Telefone</span>
-        <a href="tel:+5515991574343">(15) 99157-4343</a>
-      </div>
-      <div class="contato-card reveal">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-        <span class="lbl">Endereço</span>
-        <span class="val">R. Prof. Toledo, 264 — Sorocaba, SP</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <h5>Endereço</h5><p>R. Prof. Toledo, 264 — Sorocaba, SP</p>
       </div>
     </div>
     <div class="mapa-wrap reveal">
@@ -607,79 +367,47 @@
 
 <footer>
   <div class="container">
-    <div class="foot-grid">
-      <div class="foot-col">
-        <span class="l1" style="font-family:var(--serif); font-size:1.2rem; color:var(--dourado);">DR. ANDRÉ GUSMAN</span>
-        <p style="font-size:0.8rem; margin-top:1rem; color:var(--texto-suave);">Odontologia especializada e urgência 24h em Sorocaba, SP.</p>
-      </div>
-      <div class="foot-col">
-        <h6>Links</h6>
-        <a href="#sobre">Sobre</a>
-        <a href="#procedimentos">Procedimentos</a>
-        <a href="#contato">Contato</a>
-      </div>
-      <div class="foot-col">
-        <h6>Legal</h6>
-        <p style="font-size:0.8rem; color:var(--texto-suave);">CRO-SP 168779</p>
-      </div>
-      <div class="foot-col">
-        <h6>Social</h6>
-        <div class="social-links">
-          <a href="https://www.instagram.com/dr.andregusman/" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
     <div class="foot-bottom">
-      <p>&copy; 2026 Dr. André Gusman. Todos os direitos reservados.</p>
+      <p>© 2026 Dr. André Gusman. Todos os direitos reservados.</p>
     </div>
   </div>
 </footer>
 
-<a href="https://wa.me/5515991574343" target="_blank" rel="noopener" class="wa-float">
+<a href="https://wa.me/5515991574343" target="_blank" class="wa-float">
   <svg viewBox="0 0 32 32"><path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825.737 5.587 2.137 8l-2.137 8 8.237-2.112c2.35 1.312 5.037 2.112 7.763 2.112 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.3c-2.437 0-4.812-.65-6.887-1.875l-.5-.288-5.112 1.312 1.337-5-0.325-.512c-1.35-2.15-2.062-4.637-2.062-7.187 0-7.475 6.075-13.55 13.55-13.55s13.55 6.075 13.55 13.55c0 7.475-6.075 13.55-13.55 13.55zM22.5 18.5c-.35-.175-2.075-1.025-2.4-1.137s-.55-.175-.775.175-1 1.263-1.225 1.525-.45.288-.8.112c-.35-.175-1.475-.537-2.812-1.725-1.037-.925-1.737-2.062-1.937-2.412s-.025-.537.15-.712c.15-.15.35-.412.525-.612s.225-.337.35-.562.062-.437-.025-.612-.775-1.875-1.062-2.575c-.288-.675-.575-.588-.775-.6s-.412-.012-.637-.012-.588.088-.9.425-1.188 1.163-1.188 2.837 1.213 3.3 1.388 3.525 2.388 3.65 5.788 5.112c.812.35 1.437.562 1.925.712.812.262 1.55.225 2.137.137.65-.1 2.075-.85 2.362-1.675s.288-1.525.2-1.675-.325-.262-.675-.437z"/></svg>
 </a>
 
-<button class="top-float" id="backToTop">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
-</button>
+<template id="tooth-svg">
+  <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M30 15 C20 15 15 25 16 38 C17 55 22 75 28 85 C31 90 36 88 37 80 C38 70 40 60 50 60 C60 60 62 70 63 80 C64 88 69 90 72 85 C78 75 83 55 84 38 C85 25 80 15 70 15 C62 15 58 20 50 20 C42 20 38 15 30 15 Z" stroke="currentColor" stroke-width="3"/>
+    <text x="50" y="52" font-family="Cormorant Garamond, serif" font-size="34" fill="currentColor" text-anchor="middle">A</text>
+  </svg>
+</template>
 
 <script>
   const header = document.getElementById('header');
-  const backToTop = document.getElementById('backToTop');
-  const themeToggle = document.getElementById('themeToggle');
   const burger = document.getElementById('burger');
-  const mobileMenu = document.getElementById('mobileMenu');
   const closeMenu = document.getElementById('closeMenu');
+  const mobileMenu = document.getElementById('mobileMenu');
 
-  // Scroll effect
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled');
-      backToTop.classList.add('show');
-    } else {
-      header.classList.remove('scrolled');
-      backToTop.classList.remove('show');
-    }
+    if(window.pageYOffset > 50) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
   });
 
-  backToTop.addEventListener('click', () => window.scrollTo({top: 0, behavior: 'smooth'}));
-
-  // Theme toggle
-  themeToggle.addEventListener('click', () => {
-    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-    document.documentElement.setAttribute('data-theme', isDark ? 'light' : 'dark');
-  });
-
-  // Mobile menu
   burger.addEventListener('click', () => mobileMenu.style.display = 'flex');
   closeMenu.addEventListener('click', () => mobileMenu.style.display = 'none');
   document.querySelectorAll('.mob-link').forEach(link => {
     link.addEventListener('click', () => mobileMenu.style.display = 'none');
   });
 
-  // Slider Before/After
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) entry.target.classList.add('active');
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
   document.querySelectorAll('.compare-range').forEach(range => {
     range.addEventListener('input', (e) => {
       const slider = e.target.parentElement;
@@ -688,23 +416,9 @@
     });
   });
 
-  // Reveal animation
-  const reveal = () => {
-    document.querySelectorAll('.reveal').forEach(el => {
-      const elementTop = el.getBoundingClientRect().top;
-      if (elementTop < window.innerHeight - 100) el.classList.add('show');
-    });
-  };
-  window.addEventListener('scroll', reveal);
-  reveal();
-
-  // Logo SVG Injection
   const logoSlots = document.querySelectorAll('.logo-svg-slot');
   const toothTemplate = document.getElementById('tooth-svg').content;
   logoSlots.forEach(slot => slot.appendChild(toothTemplate.cloneNode(true)));
 </script>
-
 </body>
 </html>
- 
- 
